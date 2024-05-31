@@ -20,8 +20,13 @@ public class EnergyReportController {
 
     @PostMapping("/upload")
     public String uploadEnergyReports(@RequestParam("file") String filePath) throws IOException {
-        energyReportFileService.uploadEnergyReportsFromFile(filePath);
-        return "File uploaded successfully";
+      try {
+          energyReportFileService.uploadEnergyReportsFromFile(filePath);
+          return "File uploaded successfully";
+      }catch (Exception e){
+          e.printStackTrace();
+      }          return "File uploaded failed";
+
     }
 
 

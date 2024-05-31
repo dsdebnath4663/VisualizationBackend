@@ -19,7 +19,7 @@ public class VisualizationBackendApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        energyReportFileService.uploadEnergyReportsFromFile("D:/jsondata.json");
+      //  energyReportFileService.uploadEnergyReportsFromFile("D:/jsondata.json");
 
     }
 }
