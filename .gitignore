@@ -1,0 +1,20 @@
+# Maven specific
+target/
+*.iml
+
+# Gradle specific
+build/
+.gradle/
+.idea/
+*.ipr
+*.iws
+*.jar
+*.war
+*.ear
+
+# Log files
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
