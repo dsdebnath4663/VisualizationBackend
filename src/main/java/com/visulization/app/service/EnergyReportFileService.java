@@ -13,9 +13,9 @@ import java.util.List;
 @Service
 public class EnergyReportFileService {
 
-    private EnergyReportService energyReportService;
+    private EnergyReportServiceImpl energyReportService;
 
-    public EnergyReportFileService(EnergyReportService energyReportService) {
+    public EnergyReportFileService(EnergyReportServiceImpl energyReportService) {
         this.energyReportService = energyReportService;
     }
     @Transactional
